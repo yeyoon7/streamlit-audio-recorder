@@ -32,3 +32,5 @@ def st_audiorec():
             wav_bytes = stream.read()
 
     return wav_bytes
+
+from . import st_audiorec as audio_recorder_ko

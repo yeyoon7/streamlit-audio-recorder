@@ -43,17 +43,17 @@ class StAudioRec extends StreamlitComponentBase<State> {
       <span>
         <div>
           <button id='record' onClick={this.onClick_start}>
-            Start Recording
+            녹음 시작
           </button>
           <button id='stop' onClick={this.onClick_stop}>
-            Stop
+            녹음 완료
           </button>
           <button id='reset' onClick={this.onClick_reset}>
-            Reset
+            초기화
           </button>
 
           <button id='continue' onClick={this.onClick_continue}>
-            Download
+            다운로드
           </button>
 
           <AudioReactRecorder
