@@ -38,3 +38,34 @@ if wav_audio_data is not None:
 
 Feel free to reach out to me in case you have any questions! <br>
 Pls consider leaving a `star` ☆ with this repository to show your support.
+
+## 한글 버전 스트림릿 적용법 (버튼을 한글로 바꾼 상태임!)
+**1.** 작업 중인 디렉토리 하위에 'streamlit-audio-recorder' 디렉토리 복사
+
+**2.** Frontend 의존성 설치 및 bulid
+ 1) 의존성 설치
+    ```python
+    cd 작업중인디렉토리이름/streamlit-audio-recorder/frontend
+    npm install
+    ```
+ 2) 환경 변수 설정 :  NODE_OPTIONS 환경 변수를 설정하여 OpenSSL의 레거시 암호화 기능을 활성화해야함
+    ```python
+    export NODE_OPTIONS=--openssl-legacy-provider
+    ```
+ 3) 빌드
+     ```python
+    npm run build
+    ```
+
+**3.** 패키지 설치
+ 1) setup.py 파일이 있는 디렉토리로 이동
+    ```python
+    cd 작업중인디렉토리이름/streamlit-audio-recorder
+    ```
+ 2) 패키지 설치
+    ```python
+    pip install -e .
+    ```
+
+**4.** __init__.py 파일 자체를 수정한거라서 from st_audiorec import st_audiorec 로 임포트해도 한국어 버튼 나옴
+ 
