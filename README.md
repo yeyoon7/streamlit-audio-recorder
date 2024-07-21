@@ -67,5 +67,5 @@ Pls consider leaving a `star` ☆ with this repository to show your support.
     pip install -e .
     ```
 
-**4.** __init__.py 파일 자체를 수정한거라서 from st_audiorec import st_audiorec 로 임포트해도 한국어 버튼 나옴
+**4.** "__init__.py" 파일 자체를 수정한거라서 from st_audiorec import st_audiorec 로 임포트해도 한국어 버튼 나옴
  
